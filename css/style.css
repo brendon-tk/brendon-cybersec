@@ -561,3 +561,41 @@ span {
 		margin-top: 2rem;
 	}
 }
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.thank-you h1 {
+    font-size: 5rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.thank-you p {
+    font-size: 2rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.thank-you .btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.8rem;
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    border-radius: 5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.thank-you .btn:hover {
+    box-shadow: 0 0 15px var(--main-color);
+}
