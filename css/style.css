@@ -183,7 +183,7 @@ span {
 }
 
 .about-content h2 {
-	text-align: left;
+	text-align: auto;
 	line-heaight: 1.2;
 }
 
