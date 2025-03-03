@@ -1033,41 +1033,4 @@ span {
     margin-bottom: 3rem; /* Adds space below heading */
 }
 
-.about-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Stack items */
-    text-align: center;
-}
-
-.about-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-}
-
-.about-img img {
-    max-width: 250px; /* Adjust size */
-    border-radius: 10px;
-}
-
-.about-content {
-    max-width: 70%;
-    text-align: center;
-}
-.experience,
-.education {
-    padding-bottom: 3rem; /* Reduce extra spacing */
-}
-
-.experience-container,
-.education-container {
-    margin-bottom: 0; /* Ensure no extra space */
-}
-section {
-    min-height: auto;
-    padding: 6rem 9%;
-}
 
