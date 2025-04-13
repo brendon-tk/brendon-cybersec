@@ -1121,10 +1121,46 @@ span {
     }
 }
 
+.portfolio-box {
+    background: var(--second-bg-color); /* keeps style consistent */
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-box:hover {
+    transform: translateY(-8px);
+}
+
 .portfolio-box img {
     width: 100%;
-    height: 250px; /* or whatever height works best for your layout */
+    height: 200px; /* adjust to match your visual flow */
     object-fit: cover;
-    border-radius: 2rem 2rem 0 0;
+    border-bottom: 2px solid var(--bg-color); /* optional divider line */
+}
+
+.portfolio-layer {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+    background: linear-gradient(rgba(0,0,0,.1), var(--main-color));
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-box:hover .portfolio-layer {
+    transform: translateY(0%);
 }
 
