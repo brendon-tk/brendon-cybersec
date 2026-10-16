@@ -248,26 +248,44 @@ And what did the ethical hacker say when they found a cross-site scripting (XSS)
 
 
  <!-- Contact Section -->
+<!-- Contact Section -->
 <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span></h2>
 
+    <p style="text-align:center; font-size:1.7rem; max-width:60ch; margin:0 auto 2rem; color:rgba(255,255,255,.85);">
+        Open to data analyst, business analyst, and cybersecurity roles. Send a message below, or reach me directly.
+    </p>
+
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem; margin-bottom:4rem; font-size:1.6rem;">
+        <a href="mailto:brendonmatsikinya@gmail.com" style="color:var(--main-color); display:inline-flex; align-items:center; gap:.6rem;">
+            <i class='bx bx-envelope'></i> brendonmatsikinya@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/brendon-t-matsikinya/" target="_blank" rel="noopener" style="color:var(--main-color); display:inline-flex; align-items:center; gap:.6rem;">
+            <i class='bx bxl-linkedin-square'></i> LinkedIn
+        </a>
+    </div>
+
     <form action="https://formsubmit.co/brendonmatsikinya@gmail.com" method="POST">
         <div class="input-box">
-            <input type="text" name="name" placeholder="Full Name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="name" placeholder="Full Name" autocomplete="name" required>
+            <input type="email" name="email" placeholder="Email Address" autocomplete="email" required>
         </div>
 
         <div class="input-box">
-            <input type="number" name="phone" placeholder="Mobile Number" required>
-            <input type="text" name="subject" placeholder="Email Subject" required>
+            <input type="tel" name="phone" placeholder="Phone (optional)" autocomplete="tel">
+            <input type="text" name="subject" placeholder="Subject" required>
         </div>
 
         <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
 
-        <!-- Redirect to a thank you page after submission -->
-        <input type="hidden" name="_next" value="https://brendoncybersec.cloud//thank-you.html">
-
-        <!-- Disable CAPTCHA (optional, but recommended to reduce spam issues) -->
+        <!-- Where to go after sending -->
+        <input type="hidden" name="_next" value="https://brendon-cybersec.vercel.app/thank-you.html">
+        <!-- Subject line of the email you receive -->
+        <input type="hidden" name="_subject" value="New message from your portfolio">
+        <!-- Formats the email as a neat table -->
+        <input type="hidden" name="_template" value="table">
+        <!-- Spam trap: hidden from people, bots fill it in and get blocked -->
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
         <input type="hidden" name="_captcha" value="false">
 
         <input type="submit" value="Send Message" class="btn">
@@ -275,10 +293,9 @@ And what did the ethical hacker say when they found a cross-site scripting (XSS)
 </section>
 
 
-
 <footer class="footer">
     <div class="footer-text">
-        <p>Copyright &copy; 2025 by 3thicalHack3R | All Rights Reserved.</p> 
+        <p>Copyright &copy; 2026 by 3thicalHack3R | All Rights Reserved.</p> 
     </div>
 
     <div class="footer-iconTop">
